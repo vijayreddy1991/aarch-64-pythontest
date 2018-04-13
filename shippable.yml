@@ -1,6 +1,8 @@
 jobs:
   - name: aarch64-python-test
     type: runSh
+    runtime:
+     nodePool: custom__aarch64__Ubuntu_16_04 
     steps:
       - TASK:
           runtime:

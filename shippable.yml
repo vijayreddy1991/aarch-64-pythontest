@@ -1,0 +1,15 @@
+jobs:
+  - name: aarch64-python-test
+    type: runSh
+    steps:
+      - TASK:
+          runtime:
+            options:
+              imageName: "drydock/aarch64_u16pytall"
+              imageTag: master
+          script:
+         
+            - python --version
+            - python3.5 --version
+            - pip --version
+            - virtualenv --version
